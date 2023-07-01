@@ -4,7 +4,7 @@ const iframe = document.querySelector('iframe');
 console.log(iframe);
 const player = new Player(iframe);
 const currentTime = localStorage.getItem('player_current_time');
-player.on('timeupdate', onplay);
+player.on('timeupdate',onplay);
 player.setCurrentTime(currentTime).then(function(seconds) {
     // seconds = the actual time that the player seeked to
 }).catch(function(error) {
